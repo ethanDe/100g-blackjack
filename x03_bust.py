@@ -14,8 +14,11 @@ def busts(score):
   True : user busts if the score is over 21
   False : user does not bust becuase score is 21 or less
   '''
-  
-  return None
+  x = int(score)
+  if x>21:
+    return True
+  else:
+    return False
 
 
 def main():
