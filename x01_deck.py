@@ -50,6 +50,7 @@ def main():
   assert ("AC" in deck) == True
   assert ("TD" in deck) == True
   assert len(deck) == 52
+
   
 if __name__ == "__main__":
   main()
