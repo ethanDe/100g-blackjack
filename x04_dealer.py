@@ -7,6 +7,17 @@ In Blackjack, the dealer always must follow the same rules.
 2. They will automatically take a new card if their score is less than 17
 '''
 import x02_value as z
+#split list into integer
+
+def myValue(inList):
+  if type(inList) == int:
+    pass
+    value = 
+    return value 
+  else:
+    value = inList
+    return value
+
 
 def dealer(deck):
   dealer = []
@@ -19,7 +30,7 @@ def dealer(deck):
       break
   for i in dealer:
     deck.remove(i)
-  return(dealer,score)
+  return [dealer,score]
 
 ''' 
 inputs:
