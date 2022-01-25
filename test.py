@@ -1,5 +1,12 @@
 #!python3
 
-x = [3,4]
+utotal = [8,18]
+def uValue(utotal):
+    string = [str(integer) for integer in utotal]
+    string3 = "".join(string)
+    integer2 = int(string3)
+    print(integer2)
+    return integer2
 
-print((x, 0))
+print(utotal)
+uValue(utotal)

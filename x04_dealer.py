@@ -8,16 +8,14 @@ In Blackjack, the dealer always must follow the same rules.
 '''
 import x02_value as z
 #split list into integer
-
+#if value not integer: try with 11, add if not greater than 21, add 11 else add 1
 def myValue(inList):
-  if type(inList) == int:
-    pass
-    value = 
-    return value 
-  else:
-    value = inList
-    return value
-
+  if type(inList) == list:
+    if score + 11 > 21:
+      return 1
+    elif score + 11 <= 21:
+      return 11
+#^ in progress
 
 def dealer(deck):
   dealer = []
@@ -32,6 +30,12 @@ def dealer(deck):
     deck.remove(i)
   return [dealer,score]
 
+deck = ['3C', '3S', '8S', '3D', 'AC', '9H', 'QC', 'TD', 'TH', '8H', '8D', '7C', 'TS', '7D', 'AD', 'QD', 'KC', '6H', 'JH', 'KH', 'QS', '6C', '4H', '7H', '5S', '2S', 'AS', 'AH', '5C', '2D', '2H', '6D', 'TC', '4C', 'JS', 'JC', 'KD', '2C', '4S', '3H', '5H', '7S', 'KS', '5D', 'QH', '6S', '8C', '9D', 'JD', '9S', '9C', '4D']
+run1 = dealer(deck)
+print(run1)
+run2 = dealer(deck)
+print(run2)
+exit()
 ''' 
 inputs:
 list deck: contains a shuffled list of cards

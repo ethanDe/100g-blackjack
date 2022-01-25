@@ -17,18 +17,17 @@ def value(hand):
       total = total + int(value[:1])
       total2 = total2 + int(value[:1])
     elif value[:1] in ex:
-      total = total + 1
-      total2 = total2 + 11
+        total = total + 1
+        total2 = total2 + 11
       
   if total2 == total:
     return total
   else:
-    return [total, total2]
+    utotal = [total, total2]
+    return utotal
   
 
 
-print(value(['TH','TD']))
-exit()
 def main():
   assert value(['AH','3D','4S']) ==[8,18]
   assert value(['KH','TD']) == 20
