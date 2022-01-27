@@ -1,5 +1,4 @@
 #!python3
-import x01_deck
 
 def value(hand):
   
@@ -19,14 +18,12 @@ def value(hand):
     elif value[:1] in ex:
         total = total + 1
         total2 = total2 + 11
-      
+    
   if total2 == total:
     return total
   else:
     utotal = [total, total2]
     return utotal
-  
-
 
 def main():
   assert value(['AH','3D','4S']) ==[8,18]
